@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML lesson 18</title>
+    <link rel="shortcut icon" href="tab-icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 
+        video Тег встраивания видео на страницу.
+        Некоторые атрибуты:
+            <> src - Указывает ссылку на видеофайл.
+            <> controls - Добавляет стандартные элементы управления видеоплеером в зависимости от браузера.
+            <> autoplay - Видео воспроизводится автоматически после загрузки страницы. preload не работает.
+            <> loop - Зацикливает воспроизведение видео. Оно начинается заново после завершения.
+            <> muted - Видео начинает воспроизводиться без звука.
+            <> width - Ширина видео в пикселях.
+            <> height - Высота видео в пикселях.
+            <> poster - URL-адрес картинки, которая показывается пока видео не загрузится.
+            <> preload - Подсказывает браузеру нужно ли загружать видео или информацию о нем сразу со страницей.
+                Значения:
+                -- none - Видео не загружается предварительно.
+                -- metadata - Загружается только информация о файле.(размер, продолжительность, обложка)
+                -- auto - Видео загружается со страницей.
+    --> 
+    <video src="video.mov" controls loop autoplay muted width="1024" height="600"></video>
+    <video src="video.mov" controls loop width="1024" height="600" poster="html-logo.svg" preload="metadata"></video>
+</body>
+
+</html>
